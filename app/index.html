@@ -3,11 +3,15 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<section>
+  <h2>Matt Dwen</h2>
+  <p>Sort of Shit</h2>
+</section>
+
+<section class="post-list">
+  {% for post in site.posts %}
+    <article>
+      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+    </article>
+  {% endfor %}
+</section>
