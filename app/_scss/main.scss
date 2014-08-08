@@ -2,19 +2,42 @@
 // dwen.co.nz main stylesheet
 // ****************************************************************************
 
-// Core
+
+// Mixins
 // ----------------------------------------------------------------------------
 
-@import 'core/normalize';
-@import 'core/variables';
+@import "mixins/_breakpoints";
 
 
 
-// Modules
+// Config Modules
 // ----------------------------------------------------------------------------
 
-@import 'modules/scaffolding';
-@import 'modules/typography';
+@import "modules/_vars.scss";
+@import "modules/_normalize.scss";
+@import "modules/_defaults.scss";
+
+
+
+// Objects & Modules
+// ----------------------------------------------------------------------------
+
+@import 'modules/_typography';
+@import 'modules/_misc';
+
+
+
+// Partials
+// ----------------------------------------------------------------------------
+
+@import 'partials/_main';
+@import 'partials/_drawer';
+@import 'partials/_cover';
+@import 'partials/_post-list';
+@import 'partials/_footer';
+
+// Needs to be after every module
+@import 'modules/_utils';
 
 
 

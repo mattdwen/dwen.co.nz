@@ -1,17 +1,30 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Matt Dwen
 ---
 
 <section>
   <h2>Matt Dwen</h2>
-  <p>Sort of Shit</h2>
+  <p>Sorter of Shit</h2>
 </section>
 
 <section class="post-list">
   {% for post in site.posts %}
-    <article>
-      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+    <article class="post-item">
+      <header class="post-item-header">
+        <h2 class="post-item-title" itemprop="name">
+          <a href="{{ post.url }}" item-prop="url" title="{{ post.title }}">{{ post.title }}</a>
+        </h2>
+      </header>
+      <section class="post-item-excerpt" itemprop="description">
+      </section>
+      <footer class="post-item-footer">
+        <ul class="post-item-meta-list">
+          <li class="post-item-meta-item">
+            <time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date_to_string }}</time>
+          </li>
+        </ul>
+      </footer>
     </article>
   {% endfor %}
 </section>
