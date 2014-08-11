@@ -21,6 +21,8 @@
   left: 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
   background-color: $drawer-background-color;
+  background-size: cover;
+  background-position: center center;
 }
 
 .cover-container {

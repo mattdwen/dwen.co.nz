@@ -2,6 +2,9 @@
   "name": "dwen-co-nz",
   "version": "0.0.0",
   "dependencies": {
-    "font-awesome": "~4.1.0"
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.1",
+    "font-awesome": "~4.1.0",
+    "fastclick": "~1.0.3"
   }
 }
