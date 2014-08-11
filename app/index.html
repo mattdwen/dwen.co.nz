@@ -17,6 +17,7 @@ title: Matt Dwen
         </h2>
       </header>
       <section class="post-item-excerpt" itemprop="description">
+        <p>{{ post.content | strip_html | truncatewords:75}}</p>
       </section>
       <footer class="post-item-footer">
         <ul class="post-item-meta-list">
