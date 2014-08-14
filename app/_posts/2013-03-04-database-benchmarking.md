@@ -28,7 +28,7 @@ WHERE pTax.isSearchable = 1
 
 So, a bit of a join, a sub-select to get a count, and I want distinct results. 19 Rows returned. Turns out MySQL just plain sucks.
 
-![](/content/images/2014/Jan/DBBechmark.png)
+![](/img/2013/mar/DBBechmark.png)
 
 That's execution time in seconds. All numbers are an average of 3 executions after a My MySQL server is running straight on my MacbookPro i7 8GB. The SQL2008 and Postgre are both running on a Windows 8 VM on the same hardware, with half the CPU and RAM available.
 

@@ -9,7 +9,7 @@ I wasn't expecting much from the new system. The algorithm is largely the same
 
 For the sake of comparison, I've removed most of the memory profiling points from the original importer, so I am only recording the metrics of both systems right after each line has been imported.
 
-![](/content/images/2014/Jan/CSVCustom1_1024x512.png)
+![](/img/2013/jan/CSVCustom1_1024x512.png)
 
 So, no savings in the memory department then. At least PHP is consistant in it's memory allocations!
 
@@ -21,7 +21,7 @@ At least it was faster to execute:
 
 Here's a magnified version of the memory traces.
 
-![](/content/images/2014/Jan/CSVCustom2_1024x512.png)
+![](/img/2013/jan/CSVCustom2_1024x512.png)
 
 So the new system is actually a little more memory hungry, but we're talking an average of 95KB higher at any given time.
 

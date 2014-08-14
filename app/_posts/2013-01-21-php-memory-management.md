@@ -29,7 +29,7 @@ Having discovered this, I bashed up a custom initialisation for the import API
  - Utility clean up code
  - Full CSV line processing with forced GC
 
-![](/content/images/2014/Jan/V1_1024x512.png)
+![](/img/2013/jan/V1_1024x512.png)
 
 This scale is in bytes, so we're only talking ~5MB anyway. It seemed pretty clear in the baseline that the memory was getting recycled correctly. What's really weird is when I started manually triggering the garbage collection, the memory usage went up!
 
@@ -37,11 +37,11 @@ The other problem was I was getting 600,000 lines of metrics! Excel was, shall w
 
 I then bashed up a quick and dirty memory profiler, where I could ask to tell me the memory used, when I wanted to know about it. I benchmarked my baseline code again, against all the forced garbage collection from earlier, using the full ~1700 rows:
 
-![](/content/images/2014/Jan/mempro_1_1024x512.png)
+![](/img/2013/jan/mempro_1_1024x512.png)
 
 Can you see the difference? Obvious ramp up as I read each line from the CSV into memory, then a bit of fluctuation up and down as each line is processed. I scaled up the Y-axis to get a closer look for any differences:
 
-![](/content/images/2014/Jan/mempro_2_1024x512.png)
+![](/img/2013/jan/mempro_2_1024x512.png)
 
 Yeah, nah. If there is a difference, it's barely registering into the KB. Note at this time, I measuring the total memory used by PHP, and not just by the executed script.
 
@@ -69,17 +69,17 @@ for ( $i = 0; $i &lt;= 100000; $i++ )
 
 I tweaked this to work with my own memory profiler (now incorporating excluding the base memory used, as above), and executed twice: once with **gc_disable();** and once with **gc_enable();**, and saw very similar results to the expected outcome. Yay, GC was working, as was my profiler!
 
-![](/content/images/2014/Jan/mempro_3_1024x512.png)
+![](/img/2013/jan/mempro_3_1024x512.png)
 
 I also ran a third pass, where I forced garbage collection to execute after every iteration. The default GC is executed once the symbol table contains 100,000 records, hence the step pattern as it clears once read. By forcing GC the memory is cleared every loop, and never increases.
 
 I then decided to run my import benchmarks again, using these three states, as I had not tested it with GC disabled. I was hoping to see another steadily increasing blue line, proving that GC was executing correctly.
 
-![](/content/images/2014/Jan/mempro_4_1024x512.png)
+![](/img/2013/jan/mempro_4_1024x512.png)
 
 Nope, no change. I maged up the Y-axis again to be sure:
 
-![](/content/images/2014/Jan/mempro_5_1024x512.png)
+![](/img/2013/jan/mempro_5_1024x512.png)
 
 Okay, maybe a little bit. Forcing GC to execute after every line is saving in the region of 215KB, out 18MB, so about 1.15%. Certainly nothing to write home about.
 

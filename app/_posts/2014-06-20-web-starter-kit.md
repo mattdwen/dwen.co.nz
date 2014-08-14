@@ -42,7 +42,7 @@ Which then has a CSS setup which hides the `thead`, and appends the `data-th` pr
 
 Add in some padding and formatting and you get a reasonable data-list type appearance.
 
-<img src="/img/posts/2014-06-20-web-starter-kit/table-datalist.png">
+![](/img/2014/jun/table-datalist.png)
 
 I like both the use the data attributes, and the rwd table, but neither are going to easily integrate with any WYSIWYG CMS that I'm usually building templates for.
 

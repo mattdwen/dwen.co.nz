@@ -7,7 +7,7 @@ The third version of the importer bypasses the ORM, but still uses the database 
 
 Finally, a marked improvement in memory usage:
 
-![](/content/images/2014/Jan/DB1.png)
+![](/img/2013/jan/DB1.png)
 
 An average saving of 1.3MB, which is respectable I guess. What was really awesome was the time saved:
 

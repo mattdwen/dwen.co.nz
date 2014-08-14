@@ -7,13 +7,13 @@ date: 2013-01-29 17:17:29 +13:00
 
 Don't get a bike they said. Nah, too much fun!
 
-![](/content/images/2014/Jan/IMG_20130128_182623_768x1024.jpg)
+![](/img/2013/jan/IMG_20130128_182623_768x1024.jpg)
 
 That's my right clavicle, or collarbone. Shouldn't be in three pieces, or make that awesome Z shape.
 
 Right now I'm waiting to hear if today is when they're going to put a plate on it. They weren't going to operate, and there's a 90%+ chance that will "heal" as is, but I'll always have a bump there, which would be annoying with camera bag straps and the like.
 
-![](/content/images/2014/Jan/IMG_20130128_181529_225x300.jpg)
+![](/img/2013/jan/IMG_20130128_181529_225x300.jpg)
 
 My shoulder is not that sore; it's more my headache and right hip that's annoying. I'm nil-by-mouth from midnight every night until I hear from the hospital around 9am if today's the operation day. Which means no painkillers since midnight.
 

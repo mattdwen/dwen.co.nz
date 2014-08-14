@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DIVA Gource
-date: 2014-01-17 17:08:26.000000000 +13:00
+date: 2012-10-18 17:08:26.000000000 +13:00
 ---
 So I Gourced DIVA as well.
 

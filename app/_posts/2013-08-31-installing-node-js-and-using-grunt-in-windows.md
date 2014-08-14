@@ -3,7 +3,7 @@ layout: post
 title: Installing Node.js and using Grunt in Windows
 date: 2013-08-31 17:20:45 +13:00
 ---
-![](/content/images/2014/Jan/nodejs.png)
+![](/img/2013/aug/nodejs.png)
 
 I've recently started using Grunt to auto build change logs for the PHP framework I've developed at Xplore, and I'm interested in doing the same for DIVA. Doing this in OS X is one thing, Windows I'm expecting to be completely another. I figured I'd document this for my own reference when I need to do it again.
 
@@ -14,11 +14,11 @@ First thing is download the Node.js installer from [http://nodejs.org/](http://
 
 Running **npm** from PowerShell worked right away! (always a pleasant surprise when dealing with \*nixy things in Windows land)
 
-![](/content/images/2014/Jan/node01.png)
+![](/img/2013/aug/node01.png)
 
 The whole point of having Node.js available is the fantastic library of modules available, which you can install via the **Node Package Manager**, or **npm** command line. These packages need to be installed per project. Rather than having to manually install them every time, you can define a list of requirements in a **package.json** file in the root of your directory. You could build this by hand, or instead run **npm init** in your project root.
 
-![](/content/images/2014/Jan/node03.png)
+![](/img/2013/aug/node03.png)
 
 This will prompt you to set up some default parameters, such as project name, current version, author, git location, and so on. You should now be left with a **package.json** in your project root which looks similar to:
 
@@ -58,7 +58,7 @@ Here I've basically defined that development is dependant on a package called *
 
 I should now be able to install grunt to my project, by executing **npm install**:
 
-![](/content/images/2014/Jan/node04.png)
+![](/img/2013/aug/node04.png)
 
 It'll automatically find all the dependancies for grunt and retrieve them as well. You should now have a **node_packages** directory in your project directory which contains Grunt.
 
@@ -102,7 +102,7 @@ First it's loading the changelog package from npm. Next it's defining the initia
 
 Now all I need to do is run **grunt** in the project root. It runs fine, but does't actually do anything yet as I haven't made any git commits yet! Once I've added one in...
 
-![](/content/images/2014/Jan/node05.png)
+![](/img/2013/aug/node05.png)
 
 And I end up with the following in CHANGELOG.md:
 
