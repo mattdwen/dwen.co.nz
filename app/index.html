@@ -9,7 +9,7 @@ title: Matt Dwen
 </section>
 
 <section class="post-list">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post-item">
       <header class="post-item-header">
         <h2 class="post-item-title" itemprop="name">
@@ -28,4 +28,24 @@ title: Matt Dwen
       </footer>
     </article>
   {% endfor %}
+
+  <nav role="pagination" class="post-list-pagination">
+    {% if paginator.previous_page == 1 %}
+    <a href="/" class="post-list-pagination-item post-list-pagination-item-prev" data-pjax>
+      <i class="fa fa-angle-double-left"></i>&nbsp;Newer
+    </a>
+    {% elsif paginator.previous_page %}
+      <a href="/page{{ paginator.previous_page }}" class="post-list-pagination-item post-list-pagination-item-prev" data-pjax>
+        <i class="fa fa-angle-double-left"></i>&nbsp;Newer
+      </a>
+    {% endif %}
+
+    <span class="post-list-pagination-item post-list-pagination-item-current">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+      <a href="/page{{ paginator.next_page }}" class="post-list-pagination-item post-list-pagination-item-next" data-pjax>
+        Older&nbsp;<i class="fa fa-angle-double-right"></i>
+      </a>
+    {% endif %}
+  </nav>
 </section>
