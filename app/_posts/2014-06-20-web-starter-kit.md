@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Web Starter Kit"
-date:   2014-06-20 10:32:04
+date:   2014-06-20 10:32:04 +12:00
 ---
 
 Google have just dropped [Web Starter Kit](https://developers.google.com/web/starter-kit/) on the world, which is their _"opinionated recommendations on boilerplate and tooling for building an experience that works great across multiple devices"_. This project is part of Google's larger [Web Fundamentals](https://developers.google.com/web/fundamentals/) project.
