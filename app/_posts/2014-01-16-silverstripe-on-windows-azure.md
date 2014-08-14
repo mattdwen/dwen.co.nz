@@ -28,37 +28,6 @@ This allowed the front page to work, but all other URLs resulted with a 404.
 
 The redirection certainly wasn't working. Since I knew what I wanted from an .htaccess file, and wasn't familiar with the IIS URL rewriting rules, I found [this great post](http://blog.mdavies.net/2013/05/25/azure-websites-htaccess-rewrite-web-config/) about the IIS add-on URL Rewriter which will convert .htaccess rules to an IIS config for you. This is the web.config which I ended up with:
 
-```
-<configuration>
- <system.webServer>
-  <rewrite>
-   <rules>
-    <rule name="Imported Rule 1" stopProcessing="true">
-     <match url="^(.*)$" ignoreCase="false" />
-     <conditions>
-      <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" negate="true" />
-      <add input="{REQUEST_FILENAME}" matchType="IsDirectory" ignoreCase="false" negate="true" />
-     </conditions>
-     <action type="Rewrite" url="/index.php?/{R:1}" appendQueryString="true"/>
-    </rule>
-   </rules>
-  </rewrite>
-  <security>
-   <requestFiltering>
-    <hiddenSegments>
-     <add segment="silverstripe-cache" />
-     <add segment="vendor" />
-     <add segment="composer.json" />
-     <add segment="composer.lock" />
-    </hiddenSegments>
-    <fileExtensions allowUnlisted="true" >
-     <add fileExtension=".ss" allowed="false"/>
-     <add fileExtension=".yml" allowed="false"/>
-    </fileExtensions>
-   </requestFiltering>
-  </security>
- </system.webServer>
-</configuration>
-```
+<script src="https://gist.github.com/mattdwen/09b01b16621b6c5a99c9.js"></script>
 
 Now all the pages were working. I ran a /dev/build to ensure everything was correct after the semi-completed install and I was away.
