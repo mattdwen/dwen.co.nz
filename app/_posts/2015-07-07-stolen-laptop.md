@@ -21,6 +21,8 @@ It's going to cut both ways.
 That it happened at all I don't consider "bad luck".
 You need to be prepared for some kind of loss at some stage in life.
 
+![List of stolen items](/img/2015/stolen-list.jpg)
+
 My bad luck was my bag was full of everything ready to get onto a plane that evening.
 Wallet, watch, laptop, tablet, Kindle.
 It was certainly a good score for the bastards.
@@ -147,9 +149,17 @@ A lot of apps track what devices they're registered to with your account.
 E.g. from the Dropbox website I can see a list of devices which are trusted to sync, and remove them if they're no longer trusted.
 I've gone through what I consider my "important" accounts and removed the trusted devices wherever possible.
 
-It's worth checking this regularly anyway.
-It's surprising what you can find still connected to your accounts.
-Often when rebuilding computers, phones, or tablets you end up with duplicate registrations, for example with Amazon Kindle I was up to "Matt's 9th Android Device"!
+[Authy](https://www.authy.com/) was the most important app here, as it manages all my two-factor authentication codes.
+Again, I need to trust that removing the tablet as a registered device is going to cause the app to become non-operable.
+But this relies on the tablet having reconnected to the internet first, so all the two-factor codes will continue to be generated while the tablet is offline.
+
+I've only now checked the Authy settings, and found that I can set a pin to open the app.
+This is now enabled on my phone.
+I wish the app had prompted for this during initial setup.
+
+You should regularly check what devices are registered with your applications; it's surprising what you can find still connected to your accounts.
+Often when rebuilding computers, phones, or tablets you end up with duplicate registrations.
+For example with Amazon Kindle I was up to "Matt's 9th Android Device"!
 
 ## Encryption
 
