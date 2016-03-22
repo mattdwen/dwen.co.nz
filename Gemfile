@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
-gem 'jekyll', '~>2.2.0'
-gem 'kramdown'
-gem 'sass', '>=3.2'
+ruby '2.2.4'
+
+gem 'jekyll', '~>3.1.1'
+gem 'jekyll-paginate'
