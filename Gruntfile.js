@@ -286,16 +286,6 @@ module.exports = function (grunt) {
         }]
       }
     },
-    buildcontrol: {
-      dist: {
-        options: {
-          remote: 'git@github.com:mattdwen/mattdwen.github.io.git',
-          branch: 'master',
-          commit: true,
-          push: true
-        }
-      }
-    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -318,6 +308,20 @@ module.exports = function (grunt) {
         ]
       }
     },
+
+    // Deploy the site to GitHub
+    //
+    'gh-pages': {
+      options: {
+        base: 'dist/',
+        clone: '.gh-pages',
+        repo: 'git@github.com:mattdwen/mattdwen.github.io',
+        branch: 'master'
+      },
+      src: ['**']
+    },
+
+    // Tasks which can be run at the same time
     concurrent: {
       server: [
         'sass:server',
@@ -387,7 +391,7 @@ module.exports = function (grunt) {
     //'check',
     //'test',
     'build',
-    'buildcontrol'
+    'gh-pages'
     ]);
 
   grunt.registerTask('default', [
