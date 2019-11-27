@@ -1,5 +1,11 @@
-<header>
+<header class="header">
   <h1><a href="/"><%= config.title %></a></h1>
   <h3><%= config.subtitle %></h3>
+  <button class="nav-toggler" type="button">
+    <label for="navToggle">
+      <i class="fas fa-bars"></i>
+    </label>
+  </button>
+  <input type="checkbox" id="navToggle" />
   <%- partial('nav') %>
 </header>

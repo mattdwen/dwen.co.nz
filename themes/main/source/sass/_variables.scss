@@ -1,0 +1,59 @@
+// Colours
+//
+// https://www.happyhues.co/palettes/3
+//
+// ----------------------------------------------
+
+$primary-bg: #fff;
+$secondary-bg: #eff0f3;
+
+$primary-color: #0d0d0d;
+$secondary-color: #2a2a2a;
+
+$highlight-primary: #3da9fc;
+
+
+
+$font-family: 'Roboto', sans-serif;
+$line-height-base: 1.5;
+$font-weight-base: 400;
+
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$body-color: $primary-color;
+$body-bg: $primary-bg;
+
+$link-color: $highlight-primary;
+$link-hover-color: darken($link-color, 10%);
+$link-decoration: none;
+$link-hover-decoration: none;
+
+$border-radius: .25rem;
+
+
+
+// Spacing
+//
+// ----------------------------------------------
+
+$spacer: 1rem;
+
+
+
+// Header
+//
+// ----------------------------------------------
+
+$header-bg: $secondary-bg;
+$header-color: $secondary-color;
+$header-link-color: $header-color;
+
+
+
+// Navbar
+//
+// ----------------------------------------------
+
+$navbar-break: 992px;
