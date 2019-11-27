@@ -1,0 +1,24 @@
+.footer {
+  padding: $spacer;
+
+  color: $footer-color;
+  text-align: center;
+
+  background-color: $footer-bg;
+}
+
+@media (min-width: $footer-break) {
+  .footer {
+    padding: $spacer * 2;
+
+    .nav {
+      display: flex;
+      justify-content: center;
+
+      a {
+        padding-left: $spacer / 2;
+        padding-right: $spacer / 2;
+      }
+    }
+  }
+}

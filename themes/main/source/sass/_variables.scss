@@ -32,6 +32,8 @@ $link-hover-decoration: none;
 
 $border-radius: .25rem;
 
+$break-md: 992px;
+
 
 
 // Spacing
@@ -39,6 +41,16 @@ $border-radius: .25rem;
 // ----------------------------------------------
 
 $spacer: 1rem;
+
+
+
+// Footer
+//
+// ----------------------------------------------
+
+$footer-bg: $secondary-bg;
+$footer-color: $secondary-color;
+$footer-break: $break-md;
 
 
 
@@ -56,4 +68,4 @@ $header-link-color: $header-color;
 //
 // ----------------------------------------------
 
-$navbar-break: 992px;
+$navbar-break: $break-md;
