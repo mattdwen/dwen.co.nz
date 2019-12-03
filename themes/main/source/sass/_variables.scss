@@ -7,16 +7,17 @@
 $primary-bg: #fff;
 $secondary-bg: #eff0f3;
 
-$primary-color: #0d0d0d;
-$secondary-color: #2a2a2a;
+$primary-color: #2a2a2a;
+$secondary-color: #0d0d0d;
 
 $highlight-primary: #3da9fc;
 
 
 
-$font-family: 'Roboto', sans-serif;
+$font-family: 'Alata', sans-serif;
 $line-height-base: 1.5;
 $font-weight-base: 400;
+$font-weight-light: 300;
 
 $font-size-base: 1rem;
 $font-size-lg: $font-size-base * 1.25 !default;
@@ -32,7 +33,20 @@ $link-hover-decoration: none;
 
 $border-radius: .25rem;
 
+
+
+// Grid
+//
+// ----------------------------------------------
+
 $break-md: 992px;
+$break-lg: 1200px;
+$break-xl: 1920px;
+
+$container-max-width-sm: 540px;
+$container-max-width-md: 960px;
+$container-max-width-lg: 1140px;
+$container-max-width-xl: 1600px;
 
 
 
@@ -42,6 +56,26 @@ $break-md: 992px;
 
 $spacer: 1rem;
 
+
+
+// Animation
+//
+// ----------------------------------------------
+
+$transition-duration: .5s;
+$transition-function: ease-in-out;
+
+
+
+// Cards
+//
+// ----------------------------------------------
+
+$card-bg: $secondary-bg;
+$card-heading: $secondary-color;
+$card-text: $primary-color;
+$card-text-size: $font-size-sm;
+$card-title-weight: $font-weight-light;
 
 
 // Footer
