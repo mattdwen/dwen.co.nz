@@ -32,6 +32,12 @@
   }
 }
 
+.article-content {
+  img {
+    max-width: 100%;
+  }
+}
+
 .flickr-album {
   margin-top: $spacer * 2;
 
