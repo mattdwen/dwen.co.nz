@@ -1,0 +1,15 @@
+<article class="article">
+  <header>
+    <div class="article-header-image" style="background-image: url(<%- post.header %>);"></div>
+    <h1 class="article-title"><%= post.title %></h1>
+    <div class="article-meta">
+      <%- partial('post/date') %>
+      /
+      <%- partial('post/category') %>
+    </div>
+  </header>
+
+  <div class="article-content">
+    <%- post.content %>
+  </div>
+</article>
