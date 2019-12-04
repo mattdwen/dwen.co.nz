@@ -1,7 +1,11 @@
 ---
 title: Barry Butterworth 2019
-thumb: https://live.staticflickr.com/7911/47044069881_f2011b267b_z.jpg
+thumb: https://live.staticflickr.com/7853/32102356077_a3918c375e_z.jpg
+header: https://live.staticflickr.com/7853/32102356077_ef54e4c91e_h.jpg
 date: 2019/2/9
+categories:
+ - HLR
+ - Speedway
 ---
 
-A winter evening at the HLR workshop, while the cars are stripped right back and prepared for the summers racing ahead.
+<div class="flickr-album" data-album-id="72157706531303715"></div>
