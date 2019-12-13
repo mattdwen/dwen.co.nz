@@ -1,10 +1,9 @@
 ---
 title: About
-date: 2019-12-04 18:38:34
 layout: page
 ---
 
-Heya, I'm Matt, and I pretend that I have half a clue about taking photos.
+Heya, I'm Matt, and I like to pretend that I have half a clue about taking photos.
 
 ![](/images/about/me.jpg)
 
@@ -12,7 +11,7 @@ I'm based in Auckland, New Zealand, where I own and operate [Group 6 Technologie
 
 ![](/images/about/highlands.jpg)
 
-My photography tends to be spur of the moment, shoot what you see. I like to document what goes on behind the scenes, which usually results in the back of peoples heads. Usually I'll take a single prime lense to an event, to force myself to work to find the light and the shot. My favourite lense is a Canon FD 50mm f/1.4, now over 30 years old, but produces some amazing colour.
+My photography tends to be spur of the moment, shoot what you see. I like to document what goes on behind the scenes, which usually results in the back of peoples heads. Normally I'll take a single prime lense to an event, to force myself to work to find the light and the shot. My favourite lens is a Canon FD 50mm f/1.4, now over 30 years old, but produces some amazing colour.
 
 ![](/images/about/queenstown.jpg)
 
