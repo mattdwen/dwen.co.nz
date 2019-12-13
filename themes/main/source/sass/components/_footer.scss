@@ -6,6 +6,15 @@
   text-align: center;
 
   background-color: $footer-bg;
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    font-size: $font-size-lg;
+  }
 }
 
 @media (min-width: $footer-break) {
