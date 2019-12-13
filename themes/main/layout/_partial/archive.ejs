@@ -1,3 +1,10 @@
+<% if(is_tag()){%>
+  <h1 class="article-title">
+    <small>Work</small><br/>
+    <%= page.tag %>
+  </h1>
+<% } %>
+
 <div class="flex-md-2 flex-lg-3">
   <% page.posts.each(function(post, i) { %>
     <a class="col" href="<%- url_for(post.path) %>">

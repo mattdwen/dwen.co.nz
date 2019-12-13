@@ -1,7 +1,7 @@
-<% if (post.categories && post.categories.length){ %>
+<% if (post.tags && post.tags.length){ %>
   <div class="post-category">
     In
-    <%- list_categories(post.categories, {
+    <%- list_tags(post.tags, {
       show_count: false,
       class: 'article-category',
       style: 'none',

@@ -3,7 +3,7 @@ title: HLR Workshop July 2019
 thumb: https://live.staticflickr.com/65535/48434492922_d2c95fbe12_z.jpg
 header: https://live.staticflickr.com/65535/48434492922_1b6f16fc07_h.jpg
 date: 2019/7/5
-categories:
+tags:
  - HLR
  - Speedway
 ---
