@@ -1,6 +1,9 @@
 name: Publish
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -17,13 +20,17 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
     - name: install yarn
       run: npm install -g yarn
       env:
         CI: true
+
     - name: install hexo
       run: npm install -g hexo-cli
+
     - name: yarn install
       run: yarn install
+
     - name: hexo generate
       run: hexo generate
