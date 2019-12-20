@@ -21,5 +21,9 @@ jobs:
       run: npm install -g yarn
       env:
         CI: true
+    - name: install hexo
+      run: npm install -g hexo-cli
+    - name: yarn install
+      run: yarn install
     - name: hexo generate
       run: hexo generate
