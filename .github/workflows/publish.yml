@@ -3,11 +3,10 @@ name: Publish
 on:
   push:
     branches:
-      - master
+    - master
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -16,6 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -23,8 +23,6 @@ jobs:
 
     - name: install yarn
       run: npm install -g yarn
-      env:
-        CI: true
 
     - name: install hexo
       run: npm install -g hexo-cli
@@ -34,3 +32,10 @@ jobs:
 
     - name: hexo generate
       run: hexo generate
+
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./public
