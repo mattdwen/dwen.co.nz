@@ -39,6 +39,11 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:creator" content="@mattdwen"></meta>
+  <meta name="og:title" content="<% if (title){ %><%= title %><% } else { %>Matt Dwen Photography<% } %>"></meta>
+  <% if (page.header) { %><meta name="og:image" content="<%= page.header %>"></meta><% } %>
+
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
   <%- css('sass/style') %>
