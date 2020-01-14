@@ -22,3 +22,9 @@
     </a>
   <% }) %>
 </div>
+
+<% if (page.total > 1){ %>
+  <nav class="pager">
+    <%- paginator() %>
+  </nav>
+<% } %>
