@@ -1,7 +1,7 @@
 ---
 title: Sprintcar GP 2020
 thumb: https://live.staticflickr.com/65535/49410726673_7671c728a2_z.jpg
-header: https://live.staticflickr.com/65535/49381878243_412d5216cb_h.jpg
+header: https://live.staticflickr.com/65535/49410726673_ce53633f2c_h.jpg
 date: 2020/1/18
 tags:
  - Speedway
