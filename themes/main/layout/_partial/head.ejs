@@ -40,12 +40,13 @@
   <meta name="theme-color" content="#ffffff">
 
   <meta name="twitter:card" content="<% if (page.header) { %>summary_large_image<% } else { %>summary<% } %>"></meta>
-
   <meta name="twitter:creator" content="@mattdwen"></meta>
-  <meta property="twitter:title" content="<% if (title){ %><%= title %><% } else { %>Matt Dwen Photography<% } %>"></meta>
+  <meta name="twitter:title" content="<% if (title){ %><%= title %><% } else { %>Matt Dwen Photography<% } %>"></meta>
+  <meta name="twitter:description" content="Matt Dwen Photography"></meta>
 
   <meta property="og:type" content="website"></meta>
   <meta property="og:title" content="<% if (title){ %><%= title %><% } else { %>Matt Dwen Photography<% } %>"></meta>
+  <meta property="og:description" content="Matt Dwen Photography"></meta>
 
   <% if (page.header) { %>
     <meta property="og:image" content="<%= page.header %>"></meta>
