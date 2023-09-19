@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Matt Dwen -- developer -- @mattdwen
 
 # THANKS
 
