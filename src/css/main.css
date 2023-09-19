@@ -6,16 +6,20 @@
 
 html {
   font-size: 18px;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 body {
+  position: relative;
   font-family: "Rock Salt", sans-serif;
   font-size: 1em;
   line-height: 1.6;
   background: url('//images.pixieset.com/48533146/4c1a5d705f0380d947ba4740adced800-xxlarge.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 210vw;
 }
 
 a {
@@ -25,7 +29,6 @@ a {
 
 .container {
   min-width: 100%;
-  min-height: 550px;
 }
 
 .h-100 {
@@ -37,12 +40,10 @@ a {
 }
 
 .polaroid {
-  width: 300px;
-  height: 360px;
+  width: 70vw;
+  height: 85vw;
   background: #FFF;
   position: absolute;
-  left: 40%;
-  top: 20%;
   background: linear-gradient(120deg, #fff, #DDD 60%);
   font-size: .8rem;
   box-shadow: 2px -2px 20px 0px rgba(0, 0, 0, 0.6), inset 4px 5px 10px 0 rgba(0, 0, 0, 0.1);
@@ -50,7 +51,8 @@ a {
   -webkit-backface-visibility: hidden;
 
   &:nth-child(1) {
-    left: 25%;
+    top: 5%;
+    left: 15%;
     transform: rotate(10deg);
     z-index: 2;
 
@@ -60,8 +62,8 @@ a {
   }
 
   &:nth-child(2) {
-    left: 50%;
-    top: 25%;
+    right: 15%;
+    top: 45%;
     transform: rotate(-15deg);
 
     &:hover {
@@ -71,17 +73,17 @@ a {
 
   &:nth-child(3) {
     left: 55%;
-    top: 10%;
+    top: 90%;
     transform: rotate(5deg);
   }
 }
 
 .polaroid-img {
   position: absolute;
-  top: 20px;
-  left: 10px;
-  width: 280px;
-  height: 280px;
+  top: 3vw;
+  left: 3vw;
+  width: 64vw;
+  height: 64vw;
   background: #eee;
   overflow: hidden;
 }
@@ -132,4 +134,45 @@ footer a {
 
 footer div + div {
   margin-top: 5px;
+}
+
+@media screen and (min-width: 580px) {
+  body {
+    min-height: 100vh;
+  }
+  .polaroid {
+    width: 300px;
+    height: 360px;
+
+    &:nth-child(1) {
+      left: 15%;
+    }
+
+    &:nth-child(2) {
+      right: 10%;
+      top: 45%;
+    }
+  }
+
+  .polaroid-img {
+    top: 20px;
+    left: 10px;
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .polaroid {
+    &:nth-child(1) {
+      top: 15%;
+      left: 25%;
+    }
+
+    &:nth-child(2) {
+      top: 25%;
+      right: auto;
+      left: 50%;
+    }
+  }
 }
