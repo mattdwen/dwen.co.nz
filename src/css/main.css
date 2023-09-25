@@ -20,6 +20,7 @@ body {
   background-position: center;
   background-size: cover;
   min-height: 210vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -40,10 +41,17 @@ a {
 }
 
 .polaroid {
-  width: 70vw;
-  height: 85vw;
-  background: #FFF;
+  display: flex;
+  flex-direction: column;
+
   position: absolute;
+
+  width: 70vw;
+  /* height: 68vw; */
+  padding: 3vw;
+  gap: 3vw;
+
+  background: #FFF;
   background: linear-gradient(120deg, #fff, #DDD 60%);
   font-size: .8rem;
   box-shadow: 2px -2px 20px 0px rgba(0, 0, 0, 0.6), inset 4px 5px 10px 0 rgba(0, 0, 0, 0.1);
@@ -51,23 +59,23 @@ a {
   -webkit-backface-visibility: hidden;
 
   &:nth-child(1) {
-    top: 5%;
+    top: 10vw;
     left: 15%;
     transform: rotate(10deg);
     z-index: 2;
 
     &:hover {
-      transform: rotate(5deg) scale(1.2);
+      transform: rotate(5deg) scale(1.1);
     }
   }
 
   &:nth-child(2) {
-    right: 15%;
-    top: 45%;
+    right: 15vw;
+    top: 90vw;
     transform: rotate(-15deg);
 
     &:hover {
-      transform: rotate(-10deg) scale(1.2);
+      transform: rotate(-10deg) scale(1.1);
     }
   }
 
@@ -79,11 +87,10 @@ a {
 }
 
 .polaroid-img {
-  position: absolute;
-  top: 3vw;
-  left: 3vw;
-  width: 64vw;
-  height: 64vw;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 46/47;
+
   background: #eee;
   overflow: hidden;
 }
@@ -106,7 +113,7 @@ a {
 p {
   position: absolute;
   bottom: 0px;
-  padding: 15px 20px;
+  padding: 2vw 4vw;
   margin: 0;
   letter-spacing: .1em;
 }
@@ -136,13 +143,15 @@ footer div + div {
   margin-top: 5px;
 }
 
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 580px) and (orientation: portrait) {
   body {
     min-height: 100vh;
   }
+
   .polaroid {
-    width: 300px;
-    height: 360px;
+    width: 45vw;
+    padding: 2vw;
+    gap: 2vw;
 
     &:nth-child(1) {
       left: 15%;
@@ -153,26 +162,46 @@ footer div + div {
       top: 45%;
     }
   }
+}
 
-  .polaroid-img {
-    top: 20px;
-    left: 10px;
-    width: 280px;
-    height: 280px;
+@media screen and (min-width: 580px) and (orientation: landscape) {
+  body {
+    min-height: 100vh;
+  }
+
+  .polaroid {
+    width: 50vh;
+    padding: 2vh;
+    gap: 2vh;
+
+    &:nth-child(1) {
+      top: 10%;
+      left: 20%;
+    }
+
+    &:nth-child(2) {
+      right: 20%;
+      top: 20%;
+    }
   }
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 880px) and (orientation: landscape) {
   .polaroid {
+    width: 45vh;
+    padding: 2vh;
+    gap: 2vh;
+
     &:nth-child(1) {
+      left: auto;
       top: 15%;
-      left: 25%;
+      right: 52%;
     }
 
     &:nth-child(2) {
       top: 25%;
       right: auto;
-      left: 50%;
+      left: 52%;
     }
   }
 }
