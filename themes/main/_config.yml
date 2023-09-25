@@ -1,9 +1,0 @@
-# Header
-menu:
-  Home: /
-  Work: /work
-  About: /about
-  Contact: /contact
-
-# Styles
-node_sass:

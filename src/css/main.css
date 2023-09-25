@@ -1,0 +1,207 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  position: relative;
+  font-family: "Rock Salt", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  background: url('//images.pixieset.com/48533146/4c1a5d705f0380d947ba4740adced800-xxlarge.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 210vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  min-width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;;
+}
+
+.polaroid {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  width: 70vw;
+  /* height: 68vw; */
+  padding: 3vw;
+  gap: 3vw;
+
+  background: #FFF;
+  background: linear-gradient(120deg, #fff, #DDD 60%);
+  font-size: .8rem;
+  box-shadow: 2px -2px 20px 0px rgba(0, 0, 0, 0.6), inset 4px 5px 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+
+  &:nth-child(1) {
+    top: 10vw;
+    left: 15%;
+    transform: rotate(10deg);
+    z-index: 2;
+
+    &:hover {
+      transform: rotate(5deg) scale(1.1);
+    }
+  }
+
+  &:nth-child(2) {
+    right: 15vw;
+    top: 90vw;
+    transform: rotate(-15deg);
+
+    &:hover {
+      transform: rotate(-10deg) scale(1.1);
+    }
+  }
+
+  &:nth-child(3) {
+    left: 55%;
+    top: 90%;
+    transform: rotate(5deg);
+  }
+}
+
+.polaroid-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 46/47;
+
+  background: #eee;
+  overflow: hidden;
+}
+
+.polaroid-img img {
+  z-index: -1;
+}
+
+.gloss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, .6), transparent 60%, rgba(0, 0, 0, .5) 99%);
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+p {
+  position: absolute;
+  bottom: 0px;
+  padding: 2vw 4vw;
+  margin: 0;
+  letter-spacing: .1em;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+
+  text-align: center;
+}
+
+footer div,
+footer a {
+  color: #fff;
+
+  opacity: .8;
+
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+footer div + div {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 580px) and (orientation: portrait) {
+  body {
+    min-height: 100vh;
+  }
+
+  .polaroid {
+    width: 45vw;
+    padding: 2vw;
+    gap: 2vw;
+
+    &:nth-child(1) {
+      left: 15%;
+    }
+
+    &:nth-child(2) {
+      right: 10%;
+      top: 45%;
+    }
+  }
+}
+
+@media screen and (min-width: 580px) and (orientation: landscape) {
+  body {
+    min-height: 100vh;
+  }
+
+  .polaroid {
+    width: 50vh;
+    padding: 2vh;
+    gap: 2vh;
+
+    &:nth-child(1) {
+      top: 10%;
+      left: 20%;
+    }
+
+    &:nth-child(2) {
+      right: 20%;
+      top: 20%;
+    }
+  }
+}
+
+@media screen and (min-width: 880px) and (orientation: landscape) {
+  .polaroid {
+    width: 45vh;
+    padding: 2vh;
+    gap: 2vh;
+
+    &:nth-child(1) {
+      left: auto;
+      top: 15%;
+      right: 52%;
+    }
+
+    &:nth-child(2) {
+      top: 25%;
+      right: auto;
+      left: 52%;
+    }
+  }
+}
